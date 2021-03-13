@@ -1,3 +1,4 @@
+/* 共通のスタイル */
 * {
   margin: 0;
   padding: 0;
@@ -11,10 +12,9 @@ header {
   height: 70px;
 }
 
-.h-container {
+.container {
   width: 1024px;
   margin: 0 auto;
-  line-height: 70px;
 }
 
 .clearfix::after {
@@ -31,6 +31,7 @@ header {
 .nav {
   list-style: none;
   float: right;
+  line-height: 70px;
 }
 
 .nav-list {
@@ -39,7 +40,7 @@ header {
   padding: 0 30px;
 }
 
-a {
+.nav-link {
   text-decoration: none;
   color: #fafafa;
 }
@@ -56,159 +57,157 @@ a {
   text-align: center;
   }
 
-  #main-visual>h1 {
-    font-size: 64px;
-    padding-top: 200px;
-  }
+#main-visual>h1 {
+  font-size: 64px;
+  padding-top: 200px;
+}
 
-  #main-visual>p {
-    font-size: 20px;
-    margin-top: 10px;
-  }
+#main-visual>p {
+  font-size: 20px;
+  margin-top: 10px;
+}
 
 
-  /* portfolioのスタイル */
-  #portfolio {
-    background-color: #eceff1;
-    padding-bottom: 90px;
-  }
+/* portfolioのスタイル */
+#portfolio {
+  background-color: #eceff1;
+  padding-bottom: 90px;
+}
 
-  .pf-container {
-    width: 920px;
-    margin: 0 auto;
-    text-align: center;
-  }
+.pf-header {
+  font-size: 32px;
+  color: #000000;
+  padding-top: 90px;
+  text-align: center;
+}
 
-  .pf-container>h2 {
-    font-size: 32px;
-    color: #000000;
-    padding-top: 90px;
-  }
+.line {
+  border-bottom: 3px solid #ec715f;
+  width: 70px;
+  height: 8px;
+  margin: 0 auto;
+}
 
-  .line {
-    border-bottom: 3px solid #ec715f;
-    width: 70px;
-    height: 8px;
-    margin: 0 auto;
-  }
+.pf-text {
+  font-size: 16px;
+  color: #000000;
+  padding: 30px 0;
+  text-align: center;
+}
 
-  .pf-container>p {
-    font-size: 16px;
-    color: #000000;
-    padding: 30px 0;
-  }
+.img-area {
+  width: 920px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
 
-  .img-area {
-    display: flex;
-    flex-wrap: wrap;
-  }
+.pf-img1 {
+  background-image: url(img/sketch.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 300px;
+  height: 250px;
+  margin-right: 10px;
+}
 
-  .pf-img1 {
-    background-image: url(img/sketch.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 300px;
-    height: 250px;
-    margin-right: 10px;
-  }
+.pf-img2 {
+  background-image: url(img/websuku.png);
+  background-size: cover;
+  background-position: center;
+  width: 300px;
+  height: 250px;
+  margin-right: 10px;
+}
 
-  .pf-img2 {
-    background-image: url(img/websuku.png);
-    background-size: cover;
-    background-position: center;
-    width: 300px;
-    height: 250px;
-    margin-right: 10px;
-  }
+.pf-img3 {
+  background-image: url(img/write.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 300px;
+  height: 250px;
+}
 
-  .pf-img3 {
-    background-image: url(img/write.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 300px;
-    height: 250px;
-  }
+.pf-img4 {
+  background-image: url(img/webcamp.png);
+  background-size: cover;
+  background-position: center;
+  width: 300px;
+  height: 250px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
 
-  .pf-img4 {
-    background-image: url(img/webcamp.png);
-    background-size: cover;
-    background-position: center;
-    width: 300px;
-    height: 250px;
-    margin-top: 10px;
-    margin-right: 10px;
-  }
+.pf-img5 {
+  background-image: url(img/talk.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 300px;
+  height: 250px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
 
-  .pf-img5 {
-    background-image: url(img/talk.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 300px;
-    height: 250px;
-    margin-top: 10px;
-    margin-right: 10px;
-  }
+.pf-img6 {
+  background-image: url(img/webcamp-mother.png);
+  background-size: cover;
+  background-position: center;
+  width: 300px;
+  height: 250px;
+  margin-top: 10px;
+}
 
-  .pf-img6 {
-    background-image: url(img/webcamp-mother.png);
-    background-size: cover;
-    background-position: center;
-    width: 300px;
-    height: 250px;
-    margin-top: 10px;
-  }
+/* featureのスタイル */
+#feature {
+  padding-bottom: 90px;
+}
 
- /* featureのスタイル */
- #feature {
-   padding-bottom: 90px;
- }
+.feature-header {
+  font-size: 32px;
+  color: #000000;
+  padding-top: 90px;
+  text-align: center;
+}
 
- .f-container {
-   width: 980px;
-   margin: 0 auto;
- }
+.feature-text {
+  font-size: 16px;
+  color: #000000;
+  padding: 30px 0;
+  text-align: center;
+}
 
- .f-container>h2 {
-    font-size: 32px;
-    color: #000000;
-    padding-top: 90px;
-    text-align: center;
-  }
+.strength-area {
+  width: 980px;
+  margin: 0 auto;
+}
 
-  .f-container>p {
-    font-size: 16px;
-    color: #000000;
-    padding: 30px 0;
-    text-align: center;
-  }
+.strength {
+  width: 320px;
+  height: auto;
+  margin-right: 10px;
+  float: left;
+}
 
-  .strength {
-    width: 320px;
-    height: auto;
-    margin-right: 10px;
-    float: left;
-  }
+.strength>h3 {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 20px;
+  color: #000000;
+}
 
-  .strength>h3 {
-    text-align: center;
-    padding: 10px 0;
-    font-size: 20px;
-    color: #000000;
-  }
+.strength>p {
+  font-size: 16px;
+  color: #000000;
+}
 
-  .strength>p {
-    font-size: 16px;
-    color: #000000;
-  }
+.strength:last-child {
+  margin-right: 0;
+}
 
-  .strength:last-child {
-    margin-right: 0;
-  }
-
-  .icon {
-    font-size: 60px;
-    text-align: center;
-  }
+.icon {
+  font-size: 60px;
+  text-align: center;
+}
 
 
  /* profileのスタイル */
@@ -217,19 +216,14 @@ a {
   background-color: #eceff1;
 }
 
-.prof-container {
-  width: 1024px;
-  margin: 0 auto;
-}
-
-.prof-container>h2 {
+.prof-header {
    font-size: 32px;
    color: #000000;
    padding-top: 90px;
    text-align: center;
  }
 
- .prof-container>p {
+ .prof-text {
    font-size: 16px;
    color: #000000;
    padding: 30px 0;
@@ -270,28 +264,29 @@ a {
    margin-bottom: 20px;
  }
 
+
  /* contactのスタイル */
  #contact {
   padding-bottom: 90px;
 }
 
-.c-container {
-  width: 800px;
-  margin: 0 auto;
-}
-
-.c-container>h2 {
+.contact-header {
    font-size: 32px;
    color: #000000;
    padding-top: 90px;
    text-align: center;
  }
 
-.c-container>p {
+.contact-text {
    font-size: 16px;
    color: #000000;
    padding: 30px 0;
    text-align: center;
+ }
+
+ .contact-group {
+  width: 800px;
+  margin: 0 auto;
  }
 
 .contact-left {
@@ -352,8 +347,8 @@ footer >p {
   line-height: 60px;
 }
 
-/* ------ Responsiveのスタイル ------ */
-@media screen and (max-width: 767px) {
+------ Responsiveのスタイル ------ */
+/* @media screen and (max-width: 767px) {
   body {
     width: 90%
   }
