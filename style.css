@@ -347,9 +347,77 @@ footer >p {
   line-height: 60px;
 }
 
------- Responsiveのスタイル ------ */
-/* @media screen and (max-width: 767px) {
+/* ------ Responsiveのスタイル ------ */
+@media (max-width: 768px) {
   body {
-    width: 90%
+    min-width: 805px;
+  }
+  .container {
+    width: 90%;
+  }
+  #main-visual {
+    background-image: url(img/code.png);
+    background-size: cover;
+    background-position: center;
+  }
+  #main-visual>h1 {
+    font-size: 40px;
+  }
+  #main-visual>p {
+    font-size: 18px;
+  }
+  .img-area {
+    width: 320px;
+  }
+  .pf-img2, .pf-img4, .pf-img6 {
+    display: block;
+    margin-top: 10px;
+  }
+  .pf-img1, .pf-img3, .pf-img5 {
+    display: none;
+  }
+  .strength-area {
+    width: 320px;
+  }
+  .strength {
+    margin-top: 10px;
+    float: none;
+  }
+  .strength:first-child {
+    margin-top: 0;
+  }
+  .prof-group {
+    width: 520px;
+    margin: 0 auto;
+  }
+  .prof-img-area {
+    float: none;
+  }
+  .prof-text-area {
+    margin-top: 10px;
+    float: none;
+    text-align: center;
+  }
+  .prof-text-area>h3 {
+    margin-top: 20px;
+  }
+  .contact-group {
+    width: 240px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .contact-left, .contact-right {
+    float: none;
+    margin: 0 auto;
+    width: 200px;
+  }
+  .contact-left-content {
+    margin: 0 auto;
+  }
+  .contact-right {
+    margin-top: 20px;
+  }
+  .contact-right-content >.fa {
+    margin-right: 8px;
   }
 }
