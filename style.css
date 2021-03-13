@@ -46,7 +46,7 @@ a {
 
 
 /* main-visualのスタイル */
-.main-visual {
+#main-visual {
   width: 100%;
   height: 650px;
   background-image: url(img/mv.png);
@@ -56,19 +56,19 @@ a {
   text-align: center;
   }
 
-  .main-visual>h1 {
+  #main-visual>h1 {
     font-size: 64px;
     padding-top: 200px;
   }
 
-  .main-visual>p {
+  #main-visual>p {
     font-size: 20px;
     margin-top: 10px;
   }
 
 
   /* portfolioのスタイル */
-  .portfolio {
+  #portfolio {
     background-color: #eceff1;
     padding-bottom: 90px;
   }
@@ -159,7 +159,7 @@ a {
   }
 
  /* featureのスタイル */
- .feature {
+ #feature {
    padding-bottom: 90px;
  }
 
@@ -212,7 +212,7 @@ a {
 
 
  /* profileのスタイル */
-.profile {
+#profile {
   padding-bottom: 90px;
   background-color: #eceff1;
 }
@@ -271,7 +271,7 @@ a {
  }
 
  /* contactのスタイル */
- .contact {
+ #contact {
   padding-bottom: 90px;
 }
 
@@ -350,4 +350,11 @@ footer >p {
   color: #fafafa;
   font-size: 16px;
   line-height: 60px;
+}
+
+/* ------ Responsiveのスタイル ------ */
+@media screen and (max-width: 767px) {
+  body {
+    width: 90%
+  }
 }
